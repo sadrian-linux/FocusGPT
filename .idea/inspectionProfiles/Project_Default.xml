@@ -1,0 +1,27 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="13">
+            <item index="0" class="java.lang.String" itemvalue="midv500models" />
+            <item index="1" class="java.lang.String" itemvalue="flask-restx" />
+            <item index="2" class="java.lang.String" itemvalue="Flask-Cors" />
+            <item index="3" class="java.lang.String" itemvalue="Flask-HTTPAuth" />
+            <item index="4" class="java.lang.String" itemvalue="psycopg2" />
+            <item index="5" class="java.lang.String" itemvalue="dill" />
+            <item index="6" class="java.lang.String" itemvalue="dateparser" />
+            <item index="7" class="java.lang.String" itemvalue="azure-cognitiveservices-vision-computervision" />
+            <item index="8" class="java.lang.String" itemvalue="dominate" />
+            <item index="9" class="java.lang.String" itemvalue="face_recognition" />
+            <item index="10" class="java.lang.String" itemvalue="pdf2image" />
+            <item index="11" class="java.lang.String" itemvalue="imutils" />
+            <item index="12" class="java.lang.String" itemvalue="azure-cognitiveservices-vision-face" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
