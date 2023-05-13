@@ -27,7 +27,7 @@ class PromptDistillation:
         llm_chain = LLMChain(
             llm=llm,
             prompt=prompt,
-            verbose=True,
+            verbose=False,
             memory=self.memory
         )
 

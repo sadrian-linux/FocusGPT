@@ -1,10 +1,4 @@
-# PROMP_DISTILLATION_SYSTEM_MESSAGE = """
-# You are an Expert Content Analyst. 
-# Given a content your role is to analyze the content and respond in a well formatted way with your analysis of the content as indicated.
-# """
-
 PROMP_DISTILLATION ="""
-
 %INSTRUCTIONS: 
 You are an Expert Content Analyst. 
 Given a content your role is to analyze the content and respond in a well formatted way with your analysis of the content as indicated.
@@ -12,9 +6,9 @@ Write in an explorative style the most relevant 3 questions that will help you g
 Ask only for things not stated already and that are core relevant for clarifying my need. Be assertive, it’s important to weed out false leads and assumptions early.
 
 %CONTENT:
-Given the following sequence of my prompts:
+"
 {prompt_sequence}
-HUMAN: 
+HUMAN:
 {user_input}
-
+" 
 """

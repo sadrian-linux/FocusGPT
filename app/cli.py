@@ -227,6 +227,7 @@ class CLI:
         multi_mode = False
         while True:
             try:
+                #TODO: Reasearch rich for a method to ask for input 
                 line = input()
                 lines.append(line)
 
