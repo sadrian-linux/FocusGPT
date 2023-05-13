@@ -73,7 +73,7 @@ class CLI:
         self.reset()
 
         # wire up services
-        self.service_a = ServiceA()
+        self.service_a = ServiceA(self.state)
 
         self.command_patterns = {
             CLI.Mode.NORMAL: r'/(n|normal)\s*(.*)',

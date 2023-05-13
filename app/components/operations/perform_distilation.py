@@ -1,10 +1,8 @@
-import os
-
-from langchain.llms import OpenAI
 from langchain import PromptTemplate
 from langchain.memory import ConversationBufferMemory
 from langchain import LLMChain
 
+from app.utils.service_a import helpers
 from app.components.prompts import prompt_distillation as prompts
 
 # call services from UI - in the future we can call them from API endpoint
@@ -15,9 +13,6 @@ class PromptDistillation:
         self.memory = ConversationBufferMemory(memory_key="prompt_sequence")
 
     def perform_distillation(self, llm, input_data):
-        if input_data == "done":
-            return self.memory
-
         prompt_template = prompts.PROMP_DISTILLATION
         prompt = PromptTemplate(
             template=prompt_template,
@@ -34,3 +29,7 @@ class PromptDistillation:
         result = llm_chain.predict(user_input=input_data)
 
         return result
+    
+    def retrun_distilated_prompt(self):
+        response = helpers.extract_conversation_info(self.memory)
+        return response
